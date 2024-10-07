@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      gh-pages:
-        specifier: ^6.1.1
-        version: 6.1.1
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -66,6 +63,9 @@ importers:
       eslint-plugin-tailwindcss:
         specifier: ^3.17.4
         version: 3.17.4(tailwindcss@3.4.12)
+      gh-pages:
+        specifier: ^6.1.1
+        version: 6.1.1
       happy-dom:
         specifier: ^12.10.3
         version: 12.10.3
