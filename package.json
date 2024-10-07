@@ -1,5 +1,5 @@
 {
-  "name": "Arvin Portfolio",
+  "name": "arvin-portfolio",
   "description": "A website portfolio built in reactjs ecosystem",
   "version": "0.1.0",
   "private": true,
@@ -13,7 +13,6 @@
     "url": "https://github.com/joaopaulomoraes/reactjs-vite-tailwindcss-boilerplate/issues",
     "email": "joaopaulomoraes@outlook.com"
   },
-  "homepage": "https://arbeyn.github.io/arvin-portfolio",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
