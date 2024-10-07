@@ -13,6 +13,7 @@
     "url": "https://github.com/joaopaulomoraes/reactjs-vite-tailwindcss-boilerplate/issues",
     "email": "joaopaulomoraes@outlook.com"
   },
+  "homepage": "https://arbeyn.github.io/arvin-portfolio",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
