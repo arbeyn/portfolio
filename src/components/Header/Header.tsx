@@ -27,6 +27,9 @@ function Header(about) {
             <a href="">Portfolio</a>
           </div>
           <div className="">
+            <a href="">Skills</a>
+          </div>
+          <div className="">
             <a href="">Contact</a>
           </div>
         </div>
