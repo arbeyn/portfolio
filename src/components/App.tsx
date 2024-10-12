@@ -1,18 +1,14 @@
-import Header from './Header/Header'
-import Hero from './Hero/Hero'
-import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Homepage from 'pages/Homepage/Homepage'
+import About from 'pages/About/About'
+
 function App() {
   // const portfolio = useRef(null)
   // const contact = useRef(null)
 
   return (
-    <div className="min-h-dvh">
-      <div className="">
-        <div className="-mb-12 flex min-h-screen flex-col bg-bg-primary">
-          <Header />
-          <Hero />
-        </div>
+    <div className="min-h-dvh bg-bg-primary">
+      <div className="h-screen">
         <RouterProvider router={router} />
       </div>
     </div>
@@ -21,8 +17,12 @@ function App() {
 
 const router = createBrowserRouter([
   {
-    path: '/portfolio',
+    path: '/',
     element: <Homepage />
+  },
+  {
+    path: 'about',
+    element: <About />
   }
 ])
 
