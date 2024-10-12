@@ -1,11 +1,7 @@
-import About from './About/About'
-import Contact from './Contact/Contact'
-import Experience from './Experience/Experience'
 import Header from './Header/Header'
 import Hero from './Hero/Hero'
-import Portfolio from './Portfolio/Portfolio'
-import Skills from './Skills/Skills'
-
+import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom'
+import Homepage from 'pages/Homepage/Homepage'
 function App() {
   // const portfolio = useRef(null)
   // const contact = useRef(null)
@@ -17,14 +13,17 @@ function App() {
           <Header />
           <Hero />
         </div>
-        <About />
-        <Skills />
-        <Portfolio />
-        <Experience />
-        <Contact />
+        <RouterProvider router={router} />
       </div>
     </div>
   )
 }
+
+const router = createBrowserRouter([
+  {
+    path: '/portfolio',
+    element: <Homepage />
+  }
+])
 
 export default App
