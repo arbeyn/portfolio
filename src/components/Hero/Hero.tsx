@@ -7,7 +7,7 @@ function Hero() {
       <div className="mx-auto  flex w-[min(1000px,90%)] justify-evenly">
         <div className="flex flex-col items-center justify-center">
           {' '}
-          <div className="-mt-44 ">
+          <div className=" -mt-44 md:pt-20 ">
             <div className=" flex items-center justify-center">
               <div className="mb-10 w-[30%] overflow-hidden rounded-full lg:hidden ">
                 <img src={HeroImageSmall} alt="Arvin Photo" />

@@ -6,7 +6,7 @@ import Header from './Header/Header'
 import Hero from './Hero/Hero'
 import Portfolio from './Portfolio/Portfolio'
 import Skills from './Skills/Skills'
-
+import Testimony from './Testimony/Testimony'
 function App() {
   const about = useRef(null)
   // const portfolio = useRef(null)
@@ -23,6 +23,7 @@ function App() {
         <Skills />
         <Portfolio />
         <Experience />
+        <Testimony/>
         <Contact />
       </div>
     </div>
