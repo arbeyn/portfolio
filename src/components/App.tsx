@@ -21,7 +21,7 @@ function App() {
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/portfolio',
     element: <Homepage />
   },
   {
