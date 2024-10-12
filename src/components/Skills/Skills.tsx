@@ -1,9 +1,11 @@
 import React from 'react'
 import { skillList } from './skillList'
 import SkillCard from './SkillCard'
+import { Element } from 'react-scroll'
 
 function Skills() {
   return (
+    <Element name="skills">
     <div className="bg-bg-secondary py-8">
       <div className="mx-auto mt-10 w-[min(1000px,90%)]">
         <h2 className="text-center font-display text-5xl font-black text-white">
@@ -15,6 +17,7 @@ function Skills() {
         </ul>
       </div>
     </div>
+    </Element>
   )
 }
 
