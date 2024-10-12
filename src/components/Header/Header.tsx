@@ -1,12 +1,7 @@
 import React from 'react'
+import { Link } from 'react-scroll'
 
-function Header(about) {
-  const scrollToSection = (elementRef) => {
-    window.scrollTo({
-      top: elementRef.current.offsetTop,
-      behavior: 'smooth'
-    })
-  }
+function Header() {
   return (
     <header>
       <div className="mx-auto my-8 flex w-[min(1000px,90%)]">
@@ -19,18 +14,33 @@ function Header(about) {
         </div>
         <div className="flex w-full justify-center gap-8 text-text-accent">
           <div className="">
-            <a href="#" onClick={() => scrollToSection(about)}>
+            <Link to="about" smooth={true} className="hover:cursor-pointer">
               About
-            </a>
+            </Link>
           </div>
           <div className="">
-            <a href="">Portfolio</a>
+            <Link to="skills" smooth={true} className="hover:cursor-pointer">
+              Skills
+            </Link>
           </div>
           <div className="">
-            <a href="">Skills</a>
+            <Link to="portfolio" smooth={true} className="hover:cursor-pointer">
+              Portfolio
+            </Link>
           </div>
           <div className="">
-            <a href="">Contact</a>
+            <Link
+              to="experience"
+              smooth={true}
+              className="hover:cursor-pointer"
+            >
+              Experience
+            </Link>
+          </div>
+          <div className="">
+            <Link to="contact" smooth={true} className="hover:cursor-pointer">
+              Contact
+            </Link>
           </div>
         </div>
       </div>
