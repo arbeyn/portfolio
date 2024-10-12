@@ -1,47 +1,33 @@
 import React from 'react'
-import { Link } from 'react-scroll'
+import { Link } from 'react-router-dom'
 
 function Header() {
   return (
     <header>
-      <div className="mx-auto my-8 flex w-[min(1000px,90%)]">
+      <div className="mx-auto flex w-[min(1000px,90%)] py-8">
         <div>
           <div className="">
-            <a href="">
+            <Link to="/">
               <span className="text-lg font-bold text-text-primary">Arvin</span>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="flex w-full justify-center gap-8 text-text-accent">
           <div className="">
-            <Link to="about" smooth={true} className="hover:cursor-pointer">
-              About
-            </Link>
+            <Link to="/about">About </Link>
+          </div>
+          {/* <div className="">
+            <Link to="/skills">Skills</Link>
           </div>
           <div className="">
-            <Link to="skills" smooth={true} className="hover:cursor-pointer">
-              Skills
-            </Link>
+            <Link to="/portfolio">Portfolio</Link>
           </div>
           <div className="">
-            <Link to="portfolio" smooth={true} className="hover:cursor-pointer">
-              Portfolio
-            </Link>
+            <Link to="/experience">Experience</Link>
           </div>
           <div className="">
-            <Link
-              to="experience"
-              smooth={true}
-              className="hover:cursor-pointer"
-            >
-              Experience
-            </Link>
-          </div>
-          <div className="">
-            <Link to="contact" smooth={true} className="hover:cursor-pointer">
-              Contact
-            </Link>
-          </div>
+            <Link to="/contact">Contact</Link>
+          </div> */}
         </div>
       </div>
     </header>
