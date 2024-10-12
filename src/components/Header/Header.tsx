@@ -16,18 +16,18 @@ function Header() {
           <div className="">
             <Link to="/about">About </Link>
           </div>
-          {/* <div className="">
+           <div className="">
             <Link to="/skills">Skills</Link>
           </div>
           <div className="">
-            <Link to="/portfolio">Portfolio</Link>
+            <Link to="/portfolios">Portfolio</Link>
           </div>
           <div className="">
             <Link to="/experience">Experience</Link>
           </div>
           <div className="">
             <Link to="/contact">Contact</Link>
-          </div> */}
+          </div>
         </div>
       </div>
     </header>
