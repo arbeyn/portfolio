@@ -1,7 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import Drawer from 'react-modern-drawer'
+import 'react-modern-drawer/dist/index.css'
+import MainNav from './MainNav'
+import MenuIcon from '../../assets/menu-icon.svg'
+import CloseIcon from '../../assets/close-icon.svg'
 function Header() {
+  const [isOpen, setIsOpen] = React.useState(false)
+  const toggleDrawer = () => {
+    setIsOpen((prevState) => !prevState)
+  }
   return (
     <header>
       <div className="mx-auto flex w-[min(1000px,90%)] py-8">
@@ -12,22 +20,34 @@ function Header() {
             </Link>
           </div>
         </div>
-        <div className="flex w-full justify-center gap-8 text-text-accent">
-          <div className="">
-            <Link to="/about">About </Link>
+        <div className=" w-full sm:hidden">
+          <div className="flex  justify-end   ">
+            <button onClick={toggleDrawer} className="">
+              <img src={MenuIcon} alt="Menu Icon" className="w-4" />
+            </button>
+            <Drawer
+              open={isOpen}
+              onClose={toggleDrawer}
+              direction="right"
+              size={'85%'}
+            >
+              <div className=" h-full   bg-bg-secondary">
+                <button className="m-4" onClick={toggleDrawer}>
+                  <img src={CloseIcon} alt="" className="w-6" />
+                </button>
+                <div className="flex h-full flex-col items-center justify-center">
+                  <nav className="-mt-20 flex flex-col items-center justify-center gap-4 bg-bg-secondary text-lg font-medium text-text-accent">
+                    <MainNav />
+                  </nav>
+                </div>
+              </div>
+            </Drawer>
           </div>
-           <div className="">
-            <Link to="/skills">Skills</Link>
-          </div>
-          <div className="">
-            <Link to="/portfolios">Portfolio</Link>
-          </div>
-          <div className="">
-            <Link to="/experience">Experience</Link>
-          </div>
-          <div className="">
-            <Link to="/contact">Contact</Link>
-          </div>
+        </div>
+        <div className="hidden w-full text-text-accent  sm:block">
+          <nav className="flex  justify-end gap-8  ">
+            <MainNav />
+          </nav>
         </div>
       </div>
     </header>
