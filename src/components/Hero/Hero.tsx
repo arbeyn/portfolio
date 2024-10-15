@@ -14,16 +14,16 @@ function Hero() {
               </div>
             </div>
             <h1 className="mb-4">
-              <span className="text-3xl font-extralight text-white">
+              <span className="text-xl font-extralight text-white sm:text-3xl">
                 {' '}
                 I&apos;M
               </span>
-              <span className="font-display text-6xl text-text-primary">
+              <span className="font-display text-4xl text-text-primary sm:text-6xl">
                 {' '}
                 Arvin Bajande
               </span>
             </h1>
-            <p className="text-2xl font-light text-white">
+            <p className="text-xl font-light text-white sm:text-2xl">
               Third Year Software Engineering Student
             </p>
           </div>
