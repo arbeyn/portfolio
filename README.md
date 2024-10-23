@@ -14,7 +14,7 @@ If you fork this repo, please change the **form action** to an email address you
 
 ```<form
 				method="POST"
-				action="https://formsubmit.co/youremail@email.com"
+				action="https://formsubmit.co/arvinbajande@gmail.com"
 				encType="multipart/form-data"
 			>
 ```
@@ -26,4 +26,4 @@ Check out some of my other work at
 
 ## Demo
 
-![alt text](https://github.com/arbeyn/portfolio/blob/master/demo.png)
+![alt text](https://github.com/arbeyn/portfolio)
