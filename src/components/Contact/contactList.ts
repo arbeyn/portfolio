@@ -2,12 +2,12 @@ export const contactList = [
   {
     id: 'email',
     thumbnail: 'contact/mail.svg',
-    detail: 'arvin@gmail.com'
+    detail: 'arvinbajande@gmail.com'
   },
   {
     id: 'number',
     thumbnail: 'contact/phone.svg',
-    detail: '+63967384922'
+    detail: '+639928468128'
   },
   {
     id: 'github',

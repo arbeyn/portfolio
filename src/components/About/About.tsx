@@ -10,7 +10,7 @@ function About() {
             <span className="font-display text-5xl text-white">About</span>
           </h2>
           <p className="text-white">
-            My journey into software engineering started when I was about 14 and
+            My journey into software engineering started when I was about 18 and
             built my first website using basic HTML and CSS. The process of
             writing lines of code and seeing something tangible appear on the
             screen fascinated me. It wasn’t perfect, of course, but it sparked a

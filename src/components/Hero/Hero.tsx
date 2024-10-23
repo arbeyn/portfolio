@@ -24,7 +24,7 @@ function Hero() {
               </span>
             </h1>
             <p className="text-xl font-light text-white sm:text-2xl">
-              Third Year Software Engineering Student
+              Third Year Information Technology Student
             </p>
           </div>
         </div>

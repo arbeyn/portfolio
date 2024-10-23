@@ -6,6 +6,7 @@ import Portfolio from 'pages/Portfolio/Portfolio'
 import Experience from 'pages/Experience/Experience'
 import Contact from 'pages/Contact/Contact'
 
+
 function App() {
   // const portfolio = useRef(null)
   // const contact = useRef(null)
