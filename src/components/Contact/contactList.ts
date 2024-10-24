@@ -3,8 +3,8 @@ export const contactList = [
     id: 'email',
     thumbnail: 'contact/mail.svg',
 
-    detail: 'arvin@gmail.com',
-    href: 'mailto:arvin@gmail.com'
+    detail: 'arvinbajande@gmail.com',
+    href: 'https://mail.google.com/mail/u/0/#chats'
   },
   {
     id: 'number',
