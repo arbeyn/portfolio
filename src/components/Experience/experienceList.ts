@@ -15,7 +15,7 @@ export const experienceList = [
     title: 'Teaching Assistant',
     location: 'Western Institue of Technology',
     description: [
-      'Assisted in teaching fundamental programming concepts in Python to a class of 30+ students.',
+      'Assisted in teaching fundamental programming concepts in Java to a class of 30+ students.',
       'Held weekly office hours to help students debug code, understand data structures, and improve coding practices.'
     ],
     date: 'January 2023 – May 2023'
